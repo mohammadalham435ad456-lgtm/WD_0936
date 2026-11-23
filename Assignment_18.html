@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Admission Portal</h1>
+        <p>Welcome to Our College</p>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+            <h2>Available Courses</h2>
+
+            <table>
+                <caption>Courses Offered by the College</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Seats</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>4 Years</td>
+                        <td>120</td>
+                    </tr>
+
+                    <tr>
+                        <td>B.Tech ECE</td>
+                        <td>4 Years</td>
+                        <td>60</td>
+                    </tr>
+
+                    <tr>
+                        <td>B.Tech IT</td>
+                        <td>4 Years</td>
+                        <td>60</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Admission Application Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile"
+                       pattern="[0-9]{10}"
+                       title="Enter exactly 10 digits"
+                       required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                       min="17" max="30" required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select Course--</option>
+                    <option value="CSE">B.Tech CSE</option>
+                    <option value="ECE">B.Tech ECE</option>
+                    <option value="IT">B.Tech IT</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"
+                       required>
+
+                <br><br>
+
+                <input type="checkbox" id="agree"
+                       name="agree" required
+                       style="width: auto;">
+                <label for="agree" style="display: inline;">
+                    I confirm that the information is correct.
+                </label>
+
+                <br>
+
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Admission Portal</p>
+    </footer>
+
+</body>
+</html>
