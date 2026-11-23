@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested and Responsive Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        .nested {
+            background-color: lightyellow;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .wide-table {
+            min-width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nested and Responsive Tables</h1>
+
+    <h2>Nested Table</h2>
+
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>
+                <table class="nested">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Responsive Table</h2>
+
+    <div class="table-container">
+        <table class="wide-table">
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Semester</th>
+                <th>College</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>B.Tech</td>
+                <td>1st</td>
+                <td>ABES</td>
+                <td>Ghaziabad</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Aman</td>
+                <td>B.Tech</td>
+                <td>1st</td>
+                <td>ABES</td>
+                <td>Ghaziabad</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
