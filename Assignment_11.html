@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Web Page</title>
+</head>
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main-content">
+        <h2 id="home">Home</h2>
+        <p>This is an accessible web page.</p>
+
+        <img src="college.jpg"
+             alt="College campus building"
+             width="300">
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide quality education.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <button aria-label="Contact us">Contact</button>
+        </section>
+    </main>
+
+</body>
+</html>
